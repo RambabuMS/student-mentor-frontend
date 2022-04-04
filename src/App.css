@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Allerta+Stencil|Source+Code+Pro:900");
+
+/* detail root variables */
+:root {
+  --font-serif: "Allerta Stencil", sans-serif;
+  --font-mono: "Source Code Pro", monospace;
+  --color-text: #efeee7;
+  --color-bg: #223458;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table {
+  margin: 30px auto 0px auto;
+  padding: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.drawer-icon {
+  font-family: "Carter One", cursive;
+  display: flex;
+  font-size: larger;
+  align-items: center;
+}
+.drawer-name {
+  font-family: var(--font-serif);
+}
+
+.input {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  padding: 1rem 3rem;
 }
-
-.App-link {
-  color: #61dafb;
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homepage {
+  margin-left: 100px;
+  padding: 5rem;
+}
+.list {
+  padding: 30px 5px;
+}
+.list-item {
+  padding: 10px;
 }
